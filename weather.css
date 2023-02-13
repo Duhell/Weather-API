@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+
+}
+body{
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.card{
+	position: relative;
+	width: 50%;
+	max-width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+	backdrop-filter:  blur(10px);
+	flex-direction: column;
+	padding: 2em;
+	margin: 0 auto;
+	top: 20vh;
+	border-radius: 10px;
+	
+}
+
+.card .search{
+	display: flex;
+	width: 82%;
+	justify-content: center;
+}
+
+.card .search input{
+	outline: none;
+	width: 100%;
+	padding: 0 2em;
+	border: none;
+	border-radius: 25px;
+	color: black;
+
+}
+
+::placeholder{
+	font-size: 0.8rem;
+}
+
+
+button {
+	outline: none;
+	border: none;
+	background: none;	
+	cursor: pointer;
+	margin-left: 20px;
+	margin-top: 10px;
+	
+}
+button img{
+	width: 25px;
+	filter: invert(1);
+
+}
+button img:hover{
+	filter: invert(0);
+	border-radius: 50%;
+}
+
+.weather{
+	font-size: 16px;
+	margin-right: 50px;
+
+}
+.weather .city{
+	font-size: 1.2rem ;
+	margin-top: 20px;
+}
+.description{
+	text-transform: capitalize;
+	font-size: 0.9rem;
+	margin-left: 10px;
+}
+
+.temp{
+	margin-bottom: 1.2em;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+}
